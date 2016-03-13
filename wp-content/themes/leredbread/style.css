@@ -1128,3 +1128,31 @@ object {
     float: right;
     background: #FFF;
     padding-left: 0.25rem; }
+
+/*--------------------------------------------------------------
+# Blog Page Styles
+--------------------------------------------------------------*/
+.entry-header img {
+  margin-bottom: .5rem; }
+
+.entry-header h2 {
+  margin: 0; }
+
+.entry-header .entry-meta {
+  color: #a1a1a1; }
+
+.entry-title a {
+  font-size: 1.8rem;
+  color: #db272a;
+  text-decoration: none; }
+  .entry-title a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
+
+.entry-content .read-more {
+  font-weight: bold;
+  color: #db272a;
+  text-decoration: none; }
+  .entry-content .read-more:hover {
+    color: #400c0d;
+    text-decoration: underline; }

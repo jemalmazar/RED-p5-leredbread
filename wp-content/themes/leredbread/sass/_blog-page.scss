@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# Blog Page Styles
+--------------------------------------------------------------*/
+
+
+.entry-header {
+
+  img {
+    margin-bottom: .5rem;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  .entry-meta {
+    color: $third-brand-color;
+  }
+}
+
+.entry-title {
+
+  a {
+    font-size: 1.8rem;
+    color: $primary-brand-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondary-brand-color;
+      text-decoration: underline;
+    }
+
+  }
+
+}
+
+.entry-content {
+
+  .read-more {
+    font-weight: bold;
+    color: $primary-brand-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondary-brand-color;
+      text-decoration: underline;
+    }
+  }
+
+}
