@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+# Product Page Styles
+--------------------------------------------------------------*/
+
+
+.archive .product-type-box {
+
+  h3 {
+    color: $secondary-brand-color;
+  }
+
+  a:hover {
+    color: $secondary-brand-color;
+    text-decoration: underline;
+    // text-decoration-style: double;
+  }
+
+}
+.products-list {
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 0;
+    flex: 0 1 25%;
+    max-width: 25%;
+    border: $solid-border-style;
+  }
+
+  .product-info {
+    padding: 0.75rem 1rem;
+
+    .entry-title {
+      background: #FFF;
+      padding-right: 0.25rem;
+    }
+
+    .entry-title::before {
+      float: left;
+      width: 0;
+      white-space: nowrap;
+      content: '.................................................'
+    }
+
+    .price {
+      float: right;
+      background: #FFF;
+      padding-left: 0.25rem;
+    }
+  }
+
+}

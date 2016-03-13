@@ -1,0 +1,136 @@
+/*--------------------------------------------------------------
+# Front Page Styles
+--------------------------------------------------------------*/
+
+.home .content-area {
+  padding-top: 0;
+}
+
+// Banner Styles
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../images/hero-bread.jpg') center center no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem;
+  height: 550px;
+}
+
+.banner-text {
+  color: #FFF;
+  font-family: 'Overlock';
+  font-weight: bold;
+  font-size: 6rem;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 1px rgba(100, 100, 100, 0.5);
+}
+
+// Product Category Styles
+
+.product-categories {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+
+  h3 {
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.product-type-box {
+  display: inline-block;
+  width: 23%;
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $primary-brand-color;
+    text-decoration: none;
+  }
+
+  img {
+    width: 80%;
+  }
+}
+
+// See Products Styles
+
+.see-products {
+  @extend %user-action-style;
+}
+
+// Latest News Styles
+
+.latest-news {
+  background-color: $secondary-bg-color;
+  border: $solid-border-style;
+  text-align: center;
+  padding: 1.5rem 0;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+  }
+
+}
+
+.post-wrapper {
+  text-align: left;
+  max-width: 25%;
+  border: $solid-border-style;
+
+}
+
+.post-pic-wrapper {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+
+  .wp-post-image {
+    max-width: none;
+    position: absolute;
+    left: 0;
+  }
+
+}
+
+.post-meta {
+  padding: 0.75rem;
+
+  h3 {
+    font-family: 'Open_Sans';
+    font-size: 0.95rem;
+    margin: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  a {
+    color: $fourth-brand-color;
+    text-decoration: none;
+
+    &:hover{
+      color: $primary-brand-color;
+      text-decoration: underline;
+    }
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+# Footer Styles
+--------------------------------------------------------------*/
+
+.site-footer {
+  color: #fff;
+  background-color: $sixth-brand-color;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 300px;
+  }
+
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #FFF;
+  background-color: $fifth-brand-color;
+  text-align: center;
+  padding: 1.5rem 0;
+
+}

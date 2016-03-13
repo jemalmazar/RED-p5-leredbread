@@ -1,0 +1,64 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Base Page Header Style
+
+.page-header {
+	text-align: center;
+
+	h1 {
+		font-size: 2rem;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0.5rem;
+	}
+}
+
+// Base Button Style
+%base-button-style {
+	background-color: $secondary-brand-color;
+	color: #FFF;
+	padding: 0.5rem 1.5rem;
+	border: 0;
+	border-radius: 3px;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #551011;
+		color: #FFF;
+		text-decoration: underline;
+	}
+
+}
+
+// Base User Action Box Style
+
+%user-action-style {
+	background-color: $secondary-bg-color;
+	border: $solid-border-style;
+	padding: 1.5rem;
+	margin: 0 auto 3rem;
+	width: 1024px;
+
+	p {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		margin: 0;
+	}
+
+	a {
+		@extend %base-button-style;
+	}
+}

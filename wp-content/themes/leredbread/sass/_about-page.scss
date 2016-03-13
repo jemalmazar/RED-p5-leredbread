@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+# About Page Styles
+--------------------------------------------------------------*/
+
+.about-blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-block-item {
+  flex: 1 0 47.5%;
+  padding: 0 1.25rem;
+
+}
+
+.about-story {
+  margin-bottom: 5rem;
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+}
+
+.contact-us {
+  @extend %user-action-style;
+}

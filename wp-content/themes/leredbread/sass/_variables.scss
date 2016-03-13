@@ -1,0 +1,46 @@
+// Structure
+
+$base__space-unit: 1.5em;
+
+// Colors
+
+$primary-bg-color: #FFF;
+$secondary-bg-color: #FAFAFA;
+
+$primary-brand-color: #db272a;    // red brand colour
+$secondary-brand-color: #400c0d;  // brown brand colour
+$third-brand-color: #a1a1a1;      // light grey brand colour
+$fourth-brand-color: #808080;     // medium grey brand colour
+$fifth-brand-color: #333;         // dark grey brand colour
+$sixth-brand-color: #222;         // near black brand colour
+
+$color__background-body: #fff;
+$color__text-main: #404040;
+
+$color__background-screen: #f1f1f1;
+$color__text-screen: #21759b;
+
+$color__background-hr: #ccc;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #666;
+
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+
+// Typography
+
+// $main_font: 'Open_Sans';
+$heading_font: 'Overlock';
+
+$font__main: 'Open_Sans', sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+// Border
+
+$solid-border-style: 1px solid #e1e1e1;
+$dashed-border-style: 1px dashed #d2d2d2;
