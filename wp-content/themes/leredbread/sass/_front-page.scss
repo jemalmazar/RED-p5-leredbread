@@ -50,7 +50,10 @@
   width: 23%;
 
   h3 {
+    font-size: 1.5rem;
+    color: $secondary-brand-color;
     text-transform: uppercase;
+    margin: 0;
   }
 
   a {
@@ -59,6 +62,7 @@
   }
 
   img {
+    margin-bottom: 1.5rem;
     width: 80%;
   }
 }

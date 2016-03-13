@@ -2,6 +2,59 @@
 # Forms
 --------------------------------------------------------------*/
 
+.wpcf7-form {
+
+	input[type="text"], textarea {
+		background-color: $secondary-bg-color;
+		width: 100%;
+		resize: none;
+	}
+
+	label {
+		font-family: 'Open_Sans';
+		font-weight: bold;
+		color: $fourth-brand-color;
+		display: inline-block;
+		margin-bottom: 0.25rem;
+	}
+
+	.form-asterisk {
+		color: $primary-brand-color;
+	}
+
+	.name {
+		float: left;
+		width: 49%;
+		margin-right: 1%;
+	}
+
+	.email {
+		float: right;
+		width: 49%;
+		margin-left: 1%;
+	}
+
+	.subject {
+		clear: both;
+		width: 100%;
+	}
+
+	input[type="submit"] {
+		@extend %base-button-style;
+		font-size: 1rem;
+		font-weight: normal;
+		box-shadow: none;
+		padding: 0.75rem 1.5rem;
+
+		&:hover {
+			text-decoration: none;
+			box-shadow: none;
+		}
+
+	}
+
+}
+
 /* Buttons */
 
 button,

@@ -18,27 +18,26 @@ get_header(); ?>
 							the_archive_title( '<h1 class="page-title">', '</h1>' );
 							the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
+						<p><?php echo CFS()->get('tagline'); ?></p>
 
-						<p>We are a team of creative and talented individuals who love making delicious treats.</p>
-
-							<?php
-								$terms = get_terms( 'product-type' );
-							 ?>
+						<?php
+							$terms = get_terms( 'product-type' );
+						 ?>
 			<!-- Procuct Categories -->
-							 <!-- Loop for displaying product categories -->
-							 <?php if ( !empty( $terms ) ) : ?>
-								 <?php foreach ( $terms as $term ) : ?>
+						<!-- Loop for displaying product categories -->
+						<?php if ( !empty( $terms ) ) : ?>
+							<?php foreach ( $terms as $term ) : ?>
 
-									 <div class="product-type-box">
-										<a href=" <?php echo get_term_link( $term )?> ">
-											<img src=" <?php echo get_template_directory_uri() . '/images\/' . $term->slug ?>.png " alt="<?php echo $term-> name; ?>" />
-											<h3><?php echo $term-> name; ?></h3>
-										</a>
-									 </div>
+								<div class="product-type-box">
+									<a href=" <?php echo get_term_link( $term )?> ">
+										<img src=" <?php echo get_template_directory_uri() . '/images\/' . $term->slug ?>.png " alt="<?php echo $term-> name; ?>" />
+										<h3><?php echo $term-> name; ?></h3>
+									</a>
+								</div>
 
 
-								<?php endforeach ?>
-							<?php endif ?>
+							<?php endforeach ?>
+						<?php endif ?>
 
 					</header><!-- .page-header -->
 

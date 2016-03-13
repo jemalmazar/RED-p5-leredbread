@@ -2,6 +2,8 @@
 # Header Styles
 --------------------------------------------------------------*/
 
+// Logo & Social Bar
+
 .site-header {
   font-family: 'Open_Sans';
   background-color: $secondary-bg-color;
@@ -67,7 +69,7 @@
     border: $solid-border-style;
     border-top: none;
     border-bottom: none;
-    padding: 0.5rem 1.5rem;
+    padding: 0.75rem 1.5rem;
   }
 
 }
@@ -87,7 +89,7 @@
 
 
   fieldset{
-    padding: 0.25rem 0 0;
+    padding: 0.5rem 0 0;
     border: 0;
     margin: 0;
   }
@@ -110,4 +112,29 @@
     font-size: 1rem;
   }
 
+}
+
+// Page Header Styles
+
+.page-header {
+	text-align: center;
+	@extend %header-style
+}
+
+.page-template-default {
+
+  .entry-header {
+  	text-align: left;
+  	@extend %header-style;
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: $fourth-brand-color;
+    margin: 0 auto 1.75rem;
+  }
+
+  p {
+    margin-top: 0;
+  }
 }

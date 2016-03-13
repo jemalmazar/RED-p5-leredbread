@@ -21,6 +21,23 @@
 	display: inline;
 }
 
+body:not(.home):not(.page-template-about-page):not(.post-type-archive-product) .site-content {
+	@include center-block;
+	display: flex;
+	width: 1024px;
+}
+
+body:not(.home):not(.page-template-about-page):not(.post-type-archive-product) .content-area {
+	border-right: $solid-border-style;
+	padding-right: 5%;
+	width: 73%;
+}
+
+body:not(.home):not(.page-template-about-page):not(.post-type-archive-product) .widget-area {
+	padding-left: 5%;
+	width: 27%;
+}
+
 .content-area {
 	padding: 3rem 0;
 }
