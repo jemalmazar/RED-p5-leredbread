@@ -2,4 +2,96 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/*~~~~~  Front page: ~~~~~*/
+/*~~~~~  Search Page: ~~~~~*/
+
+.search-results, .search-no-results {
+
+  .page-header {
+    text-align: left;
+    padding-bottom: 1.5rem;
+    border-bottom: $dashed-border-style;
+    margin-bottom: 1.5rem
+  }
+
+  .read-more {
+    font-weight: bold;
+    color: $primary-brand-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondary-brand-color;
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: $primary-brand-color;
+    }
+
+  }
+
+}
+
+.page-content .search-form {
+  justify-content: flex-start;
+
+  input[type="search"] {
+    display: block;
+    font-weight: bold;
+    color: $fifth-brand-color;
+    background-color: $secondary-bg-color;
+    border: $solid-border-style;
+    margin-bottom: 1rem;
+  }
+
+  .icon-search {
+    @extend %base-button-style;
+
+    i {
+      color: #FFF;
+    }
+  }
+
+}
+
+/*    404 Page    */
+
+.error404 {
+
+  .page-header {
+    display: none;
+  }
+
+  .page-content:first-child {
+    display: none;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  a {
+    color: $primary-brand-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondary-brand-color;
+      text-decoration: underline;
+    }
+  }
+
+  .page-content .search-form{
+
+    input[type="search"] {
+      display: inline-block;
+      padding: 0.5rem 0.25rem;
+    }
+
+    .icon-search {
+      padding: 0.75rem 1.5rem;
+    }
+
+  }
+
+}

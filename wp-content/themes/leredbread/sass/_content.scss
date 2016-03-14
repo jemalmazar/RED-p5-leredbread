@@ -34,6 +34,7 @@ body:not(.home):not(.page-template-about-page):not(.post-type-archive-product) .
 }
 
 body:not(.home):not(.page-template-about-page):not(.post-type-archive-product) .widget-area {
+	padding-top: 3rem;
 	padding-left: 5%;
 	width: 27%;
 }

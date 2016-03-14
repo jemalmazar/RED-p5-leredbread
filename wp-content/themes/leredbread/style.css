@@ -51,7 +51,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .page-header p, .page-template-default .entry-header p, .single-product .entry-header p {
   margin-bottom: 3rem; }
 
-.see-products a, .contact-us a, .wpcf7-form input[type="submit"], .comments-area input[type="submit"] {
+.see-products a, .contact-us a, .wpcf7-form input[type="submit"], .comments-area input[type="submit"], .page-content .search-form .icon-search {
   background-color: #400c0d;
   color: #FFF;
   padding: 0.5rem 1.5rem;
@@ -59,11 +59,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   border-radius: 3px;
   text-decoration: none;
   cursor: pointer; }
-  .see-products a:hover, .contact-us a:hover, .wpcf7-form input[type="submit"]:hover, .comments-area input[type="submit"]:hover {
+  .see-products a:hover, .contact-us a:hover, .wpcf7-form input[type="submit"]:hover, .comments-area input[type="submit"]:hover, .page-content .search-form .icon-search:hover {
     background-color: #551011;
     color: #FFF;
     text-decoration: underline; }
-  .see-products a:visited, .contact-us a:visited, .wpcf7-form input[type="submit"]:visited, .comments-area input[type="submit"]:visited {
+  .see-products a:visited, .contact-us a:visited, .wpcf7-form input[type="submit"]:visited, .comments-area input[type="submit"]:visited, .page-content .search-form .icon-search:visited {
     color: #FFF; }
 
 .see-products, .contact-us {
@@ -783,6 +783,7 @@ body:not(.home):not(.page-template-about-page):not(.post-type-archive-product) .
   width: 73%; }
 
 body:not(.home):not(.page-template-about-page):not(.post-type-archive-product) .widget-area {
+  padding-top: 3rem;
   padding-left: 5%;
   width: 27%; }
 
@@ -984,11 +985,23 @@ object {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem; }
+  padding: 3rem 1rem; }
   .footer-info h3 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
     margin: 0; }
+  .footer-info i {
+    font-size: 1.25rem;
+    margin-right: 0.5rem; }
+  .footer-info a {
+    color: #FFF;
+    text-decoration: none; }
+    .footer-info a:hover {
+      text-decoration: underline; }
+  .footer-info .day-of-week {
+    font-weight: bold; }
   .footer-info p {
-    margin: 0; }
+    margin: 0 auto 0.5rem; }
 
 .footer-logo {
   display: -webkit-flex;
@@ -1010,7 +1023,63 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/*~~~~~  Front page: ~~~~~*/
+/*~~~~~  Search Page: ~~~~~*/
+.search-results .page-header, .search-no-results .page-header {
+  text-align: left;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #d2d2d2;
+  margin-bottom: 1.5rem; }
+
+.search-results .read-more, .search-no-results .read-more {
+  font-weight: bold;
+  color: #db272a;
+  text-decoration: none; }
+  .search-results .read-more:hover, .search-no-results .read-more:hover {
+    color: #400c0d;
+    text-decoration: underline; }
+  .search-results .read-more:visited, .search-no-results .read-more:visited {
+    color: #db272a; }
+
+.page-content .search-form {
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .page-content .search-form input[type="search"] {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    background-color: #FAFAFA;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 1rem; }
+  .page-content .search-form .icon-search i {
+    color: #FFF; }
+
+/*    404 Page    */
+.error404 .page-header {
+  display: none; }
+
+.error404 .page-content:first-child {
+  display: none; }
+
+.error404 ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 0; }
+
+.error404 a {
+  color: #db272a;
+  text-decoration: none; }
+  .error404 a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
+
+.error404 .page-content .search-form input[type="search"] {
+  display: inline-block;
+  padding: 0.5rem 0.25rem; }
+
+.error404 .page-content .search-form .icon-search {
+  padding: 0.75rem 1.5rem; }
+
 /*--------------------------------------------------------------
 # Front Page Styles
 --------------------------------------------------------------*/
@@ -1260,6 +1329,13 @@ object {
     color: #400c0d;
     text-decoration: underline; }
 
+/*    Archive Styles    */
+.date .page-header {
+  text-align: left;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #d2d2d2;
+  margin-bottom: 1.5rem; }
+
 /*    Single Blog Styles    */
 .single-post .entry-title {
   text-transform: uppercase;
@@ -1323,3 +1399,49 @@ object {
       .comments-area .comment-body .comment-content a:hover {
         color: #400c0d;
         text-decoration: underline; }
+
+/*--------------------------------------------------------------
+# Sidebar Menu Styles
+--------------------------------------------------------------*/
+.widget-area .widget-title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 0 auto 0.5rem; }
+
+.widget-area .contact-meta {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem; }
+  .widget-area .contact-meta i {
+    color: #808080;
+    margin-right: 0.5rem;
+    width: 1.5rem; }
+  .widget-area .contact-meta a {
+    color: #db272a;
+    text-decoration: none; }
+    .widget-area .contact-meta a:hover {
+      color: #400c0d;
+      text-decoration: underline; }
+
+.widget-area p {
+  margin-bottom: 0.5rem; }
+
+.widget-area .day-of-week {
+  font-weight: bold;
+  color: #db272a; }
+
+.widget-area .widget_archive ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.widget-area .widget_archive a {
+  color: #db272a;
+  text-decoration: none; }
+  .widget-area .widget_archive a:hover {
+    color: #400c0d;
+    text-decoration: underline; }

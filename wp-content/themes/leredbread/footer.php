@@ -13,8 +13,19 @@
 				<div class="footer-info container">
 					<div class="footer-contact">
 						<h3>Contact</h3>
-						<p>info@leredbread.com</p>
-						<p>(555) 343 456 7891</p>
+						<p>
+							<i class="fa fa-envelope"></i>
+						  <a href="mailto:info@leredbread.com">info@leredbread.com</a>
+						</p>
+						<p>
+							<i class="fa fa-phone"></i>
+							<a href="tel:5553434567891">(555) 343 456 7891</a>
+						</p>
+						<p>
+							<span><i class="fa fa-facebook-square"></i></span>
+							<span><i class="fa fa-twitter-square"></i></span>
+							<span><i class="fa fa-google-plus-square"></i></span>
+						</p>
 
 					</div>
 
@@ -24,9 +35,9 @@
 
 					<div class="footer-hours">
 						<h3>Business Hours</h3>
-						<p>Monday to Friday: 9am to 5pm</p>
-						<p>Saturday: 10am to 2pm</p>
-						<p>Sunday: Closed</p>
+						<p><span class="day-of-week">Monday to Friday: </span>9am to 5pm</p>
+						<p><span class="day-of-week">Saturday: </span>10am to 2pm</p>
+						<p><span class="day-of-week">Sunday: </span>Closed</p>
 
 					</div>
 

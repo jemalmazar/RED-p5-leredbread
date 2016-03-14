@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+# Sidebar Menu Styles
+--------------------------------------------------------------*/
+
+.widget-area {
+
+  .widget-title {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 0 auto 0.5rem;
+  }
+// Contact Info
+  .contact-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    i {
+      color: $fourth-brand-color;
+      margin-right: 0.5rem;
+      width: 1.5rem;
+    }
+
+    a {
+      color: $primary-brand-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $secondary-brand-color;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+// Business Hours
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  .day-of-week {
+    font-weight: bold;
+    color: $primary-brand-color;
+  }
+
+// Archives
+
+  .widget_archive {
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    a {
+      color: $primary-brand-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $secondary-brand-color;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}

@@ -10,14 +10,32 @@
 .footer-info {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 3rem 1rem;
 
   h3 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
     margin: 0;
   }
 
+  i {
+      font-size: 1.25rem;
+      margin-right: 0.5rem;
+    }
+
+  a {
+    color: #FFF;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  .day-of-week {
+    font-weight: bold;
+  }
+
   p {
-    margin: 0;
+    margin: 0 auto 0.5rem;
   }
 }
 
