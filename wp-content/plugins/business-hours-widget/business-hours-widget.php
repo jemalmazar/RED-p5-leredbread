@@ -7,7 +7,7 @@
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
  * @package   LRB_Hours
- * @author    Your Name <email@example.com>
+ * @author    Jeremiah Almazar <jemalmazar@gmail.com>
  * @license   GPL-2.0+
  * @link      http://example.com
  * @copyright 2015 Your Name or Company Name

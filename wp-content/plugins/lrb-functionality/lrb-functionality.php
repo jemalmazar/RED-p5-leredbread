@@ -2,7 +2,7 @@
  /**
  *
  * @package   Le Red Bread Functionality
- * @author    Ardalan Memar <ardalanmemar@gmail.com>
+ * @author    Jeremiah Almazar <jemalmazar@gmail.com>
  * @license   GPL-2.0+
  * @copyright 2015 Your Name or Company
  *
@@ -10,7 +10,7 @@
  * Plugin Name: Le Red Bread Functionality
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
- * Author:      Ardalan Memar
+ * Author:      Jeremiah Almazar
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
