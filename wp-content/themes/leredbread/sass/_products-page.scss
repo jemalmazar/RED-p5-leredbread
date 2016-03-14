@@ -2,7 +2,12 @@
 # Product Page Styles
 --------------------------------------------------------------*/
 
+.archive .product-type-block {
+  margin-bottom: 3rem;
+}
+
 .archive .product-type-box {
+  width: 18%;
 
   img {
     width: 60%;
@@ -18,7 +23,6 @@
   a:hover {
     color: $secondary-brand-color;
     text-decoration: underline;
-    // text-decoration-style: double;
   }
 
 }

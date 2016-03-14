@@ -19,12 +19,18 @@ get_header(); ?>
 							the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
 
+						<p>We are a team of creative and talented individuals who love making delicious treats.</p>
+
+						<hr class="decoration"></hr>
+
 						<?php
 							$terms = get_terms( 'product-type' );
 						 ?>
-			<!-- Procuct Categories -->
+
+			<!-- Product Categories -->
 						<!-- Loop for displaying product categories -->
 						<?php if ( !empty( $terms ) ) : ?>
+							<div class="product-type-block">
 							<?php foreach ( $terms as $term ) : ?>
 
 								<div class="product-type-box">
@@ -34,8 +40,8 @@ get_header(); ?>
 									</a>
 								</div>
 
-
 							<?php endforeach ?>
+						</div>
 						<?php endif ?>
 
 					</header><!-- .page-header -->

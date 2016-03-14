@@ -57,9 +57,27 @@
   margin-bottom: 1.5rem
 }
 
+.category .page-header {
+  text-align: left;
+  padding-bottom: 1.5rem;
+  border-bottom: $dashed-border-style;
+  margin-bottom: 1.5rem
+}
+
+/*    Tag Styles    */
+
+.tag .page-header {
+  text-align: left;
+  padding-bottom: 1.5rem;
+  border-bottom: $dashed-border-style;
+  margin-bottom: 1.5rem
+}
+
 /*    Single Blog Styles    */
 
 .single-post {
+
+  article { margin-bottom: 5rem; }
 
   .entry-title {
     text-transform: uppercase;

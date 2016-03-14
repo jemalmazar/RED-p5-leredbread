@@ -1144,6 +1144,9 @@ object {
   border: 1px solid #e1e1e1;
   text-align: center;
   padding: 1.5rem 0; }
+  .latest-news h2 {
+    font-size: 1.75rem;
+    text-transform: uppercase; }
   .latest-news ul {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1187,6 +1190,65 @@ object {
   .post-meta span {
     font-size: 0.8rem; }
 
+/*    Testimonials Styles    */
+.testimonials h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.testimonials ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; }
+
+.testimonials li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex: 0 1 50%;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 1.5rem; }
+
+.testimonials li:first-child, .testimonials li:nth-child(3) {
+  border-right: 1px dashed #d2d2d2; }
+
+.testimonials li:first-child, .testimonials li:nth-child(2) {
+  border-bottom: 1px dashed #d2d2d2; }
+
+.testimonials img {
+  height: 100px;
+  width: 100px;
+  margin-right: 1.5rem; }
+
+.testimonials .review-content {
+  display: inline-block; }
+
+.testimonials p {
+  margin-bottom: 1.5rem; }
+
+.testimonials .reviewer-name, .testimonials .reviewer-info {
+  margin-bottom: 0.25rem; }
+
+.testimonials .reviewer-name {
+  font-weight: bold; }
+
+.testimonials .reviewer-info a {
+  color: #db272a;
+  text-decoration: none; }
+  .testimonials .reviewer-info a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
+
 /*--------------------------------------------------------------
 # About Page Styles
 --------------------------------------------------------------*/
@@ -1210,21 +1272,41 @@ object {
     font-size: 2rem;
     text-align: center; }
 
+hr.decoration {
+  background-color: #CCC;
+  height: 1px;
+  margin: 0 auto 3rem;
+  max-width: 320px;
+  width: 50%;
+  position: relative; }
+  hr.decoration:after {
+    content: ' \25CF';
+    font-size: 2rem;
+    color: #CCC;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: -2px;
+    left: 50%; }
+
 /*--------------------------------------------------------------
 # Product Page Styles
 --------------------------------------------------------------*/
-.archive .product-type-box img {
-  width: 60%;
-  margin-bottom: 0.75rem; }
+.archive .product-type-block {
+  margin-bottom: 3rem; }
 
-.archive .product-type-box h3 {
-  font-size: 1.25rem;
-  color: #400c0d;
-  margin: 0; }
-
-.archive .product-type-box a:hover {
-  color: #400c0d;
-  text-decoration: underline; }
+.archive .product-type-box {
+  width: 18%; }
+  .archive .product-type-box img {
+    width: 60%;
+    margin-bottom: 0.75rem; }
+  .archive .product-type-box h3 {
+    font-size: 1.25rem;
+    color: #400c0d;
+    margin: 0; }
+  .archive .product-type-box a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
 
 .products-list ul {
   display: -webkit-flex;
@@ -1336,7 +1418,23 @@ object {
   border-bottom: 1px dashed #d2d2d2;
   margin-bottom: 1.5rem; }
 
+.category .page-header {
+  text-align: left;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #d2d2d2;
+  margin-bottom: 1.5rem; }
+
+/*    Tag Styles    */
+.tag .page-header {
+  text-align: left;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #d2d2d2;
+  margin-bottom: 1.5rem; }
+
 /*    Single Blog Styles    */
+.single-post article {
+  margin-bottom: 5rem; }
+
 .single-post .entry-title {
   text-transform: uppercase;
   margin: 0;

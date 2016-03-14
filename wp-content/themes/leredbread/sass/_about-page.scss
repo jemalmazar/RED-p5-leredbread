@@ -26,3 +26,7 @@
 .contact-us {
   @extend %user-action-style;
 }
+
+hr.decoration {
+  @include hr-line-dot;
+}

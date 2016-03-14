@@ -81,6 +81,11 @@
   text-align: center;
   padding: 1.5rem 0;
 
+  h2 {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+  }
+
   ul {
     display: flex;
     justify-content: center;
@@ -137,4 +142,76 @@
   span {
     font-size: 0.8rem;
   }
+}
+
+
+/*    Testimonials Styles    */
+
+.testimonials {
+
+  h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    flex: 0 1 50%;
+    padding: 1.5rem
+  }
+
+  li:first-child, li:nth-child(3) {
+    border-right: $dashed-border-style;
+  }
+
+  li:first-child, li:nth-child(2) {
+    border-bottom: $dashed-border-style;
+  }
+
+  img {
+    height: 100px;
+    width: 100px;
+    margin-right: 1.5rem;
+  }
+
+  .review-content {
+    display: inline-block;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  .reviewer-name, .reviewer-info {
+    margin-bottom: 0.25rem;
+  }
+
+  .reviewer-name {
+    font-weight: bold;
+  }
+
+  .reviewer-info {
+
+    a {
+      color: $primary-brand-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $secondary-brand-color;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
 }

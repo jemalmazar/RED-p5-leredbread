@@ -13,6 +13,9 @@ get_header();?>
 					<h1>Learn About Our Team And Culture</h1>
 					<p><?php echo CFS()->get('tagline'); ?></p>
 				</div> <!-- .page-header -->
+
+				<hr class="decoration"></hr>
+
 				<!-- About Boxes -->
 				<div class="about-blocks">
 					<div class="about-block-item">
@@ -37,7 +40,7 @@ get_header();?>
 				<section class="contact-us">
 					<p>
 						<span>Feel free to contact us with any questions, comments, or suggetstion. We even take custom orders!</span>
-						<a class="contact-us-button" href="/contact/">Contact Us</a>
+						<a class="contact-us-button" href="leredbread/contact/">Contact Us</a>
 					</p>
 				</section>
 			</div> <!-- .container -->

@@ -11,7 +11,26 @@
 	margin-right: auto;
 }
 
-// Header Styles
+@mixin hr-line-dot {
+	background-color: #CCC;;
+  height: 1px;
+  margin: 0 auto 3rem;
+  max-width: 320px;
+  width: 50%;
+  position: relative;
+
+	&:after {
+		content: ' \25CF';
+		font-size: 2rem;
+		color: #CCC;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: -2px;
+		left: 50%;
+	}
+}
+
+// Header Style
 %header-style {
 	h1 {
 		font-size: 2rem;
