@@ -2,6 +2,8 @@
 # Forms
 --------------------------------------------------------------*/
 
+// Contact Page Form
+
 .wpcf7-form {
 
 	input[type="text"], textarea {
@@ -51,6 +53,84 @@
 			box-shadow: none;
 		}
 
+	}
+
+}
+
+// Comments Form
+
+.comments-area {
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	label {
+		font-family: 'Open_Sans';
+		font-weight: bold;
+		color: $fourth-brand-color;
+		display: block;
+		margin-bottom: 0.25rem;
+	}
+
+	.required {
+		color: $primary-brand-color;
+	}
+
+	input, textarea {
+		background-color: $secondary-bg-color;
+		resize: none;
+	}
+
+	.comment-form-comment, .comment-form-url {
+		clear: both;
+
+		label, input {
+			width: 100%;
+		}
+
+	}
+
+	.comment-form-author {
+		float: left;
+		width: 49%;
+		margin-top: 0;
+		margin-right: 1%;
+
+		input { width: 100%; }
+	}
+
+	.comment-form-email {
+		float: right;
+		width: 49%;
+		margin-top: 0;
+		margin-left: 1%;
+
+		input { width: 100%; }
+	}
+
+	input[type="submit"] {
+		@extend %base-button-style;
+		font-size: 1rem;
+		font-weight: normal;
+		box-shadow: none;
+		padding: 0.75rem 1.5rem;
+
+		&:hover {
+			text-decoration: none;
+			box-shadow: none;
+		}
+
+	}
+
+	.logged-in-as a {
+		color: $primary-brand-color;
+		text-decoration: none;
+
+		&:hover {
+			color: $secondary-brand-color;
+			text-decoration: underline;
+		}
 	}
 
 }

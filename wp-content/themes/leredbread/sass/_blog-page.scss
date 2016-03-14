@@ -2,7 +2,6 @@
 # Blog Page Styles
 --------------------------------------------------------------*/
 
-
 .entry-header {
 
   img {
@@ -45,6 +44,99 @@
       color: $secondary-brand-color;
       text-decoration: underline;
     }
+  }
+
+}
+
+/*    Single Blog Styles    */
+
+.single-post {
+
+  .entry-title {
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 2.5rem;
+  }
+
+  .comments-link a {
+    color: $primary-brand-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondary-brand-color;
+      text-decoration: underline;
+    }
+  }
+
+  .post-quote {
+    background-color: $secondary-bg-color;
+    color: $fourth-brand-color;
+    font-size: 1.25rem;
+    padding-left: 1.5rem;
+    border-left: 7px solid $primary-brand-color;
+    margin: 0;
+  }
+
+  .cat-links { margin-right: 1.5rem; }
+
+  .cat-links a, .tags-links a {
+    color: $primary-brand-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $secondary-brand-color;
+      text-decoration: underline;;
+    }
+
+  }
+
+}
+
+
+/*    Comments Styles    */
+
+.comments-area {
+
+  .comments-title {
+    color: $third-brand-color;
+  }
+
+  .comment-list {
+    padding: 0;
+    margin: 0;
+  }
+
+  .comment-body {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 1.5rem;
+    border-bottom: $dashed-border-style;
+
+    .comment-author-avatar {
+      display: inline-block;
+      margin-right: 1.5rem;
+
+      img { border-radius: 50%; }
+
+    }
+
+    .comment-content {
+      display: inline-block;
+
+      .fn { font-weight: bold; }
+
+      a {
+        color: $primary-brand-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $secondary-brand-color;
+          text-decoration: underline;
+        }
+      }
+
+    }
+
   }
 
 }

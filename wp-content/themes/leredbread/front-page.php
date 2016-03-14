@@ -39,7 +39,7 @@ get_header(); ?>
 			<section class="see-products">
 				<p>
 					<span>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</span>
-					<a class="see-products-button" href="/products/">See Our Products</a>
+					<a class="see-products-button" href="/leredbread/products/">See Our Products</a>
 				</p>
 			</section>
 

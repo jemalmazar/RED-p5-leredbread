@@ -2,11 +2,17 @@
 # Product Page Styles
 --------------------------------------------------------------*/
 
-
 .archive .product-type-box {
 
+  img {
+    width: 60%;
+    margin-bottom: 0.75rem;
+  }
+
   h3 {
+    font-size: 1.25rem;
     color: $secondary-brand-color;
+    margin: 0;
   }
 
   a:hover {
@@ -53,6 +59,74 @@
       background: #FFF;
       padding-left: 0.25rem;
     }
+  }
+
+}
+
+/*    Product-Type Styles   */
+
+.tax-product-type {
+
+  .page-header {
+    text-align: left;
+    padding-bottom: 1.5rem;
+    border-bottom: $dashed-border-style;
+    margin-bottom: 1.5rem;
+
+    .taxonomy-description p {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+.product-menu {
+
+  .product-menu-item {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1.5rem;
+    border-bottom: $dashed-border-style;
+    margin-bottom: 1.5rem;
+
+    img {
+      height: 150px;
+      width: 150px;
+    }
+
+    .product-info {
+      padding: 0 2rem;
+
+      h2 {
+        margin: 0;
+      }
+
+    }
+
+  }
+
+}
+
+/*    Single-Product Styles    */
+
+.single-product {
+
+  .entry-header {
+    color: $secondary-brand-color;
+    @extend %header-style;
+  }
+
+  img {
+    margin-bottom: 0.5rem;
+  }
+
+  .price {
+    font-family: 'Overlock';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $secondary-brand-color;
+    margin: 0;
+
   }
 
 }

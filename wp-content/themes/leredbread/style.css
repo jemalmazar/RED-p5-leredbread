@@ -43,15 +43,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-.page-header h1, .page-template-default .entry-header h1 {
+.page-header h1, .page-template-default .entry-header h1, .single-product .entry-header h1 {
   font-size: 2rem;
   text-transform: uppercase;
   margin: 0; }
 
-.page-header p, .page-template-default .entry-header p {
+.page-header p, .page-template-default .entry-header p, .single-product .entry-header p {
   margin-bottom: 3rem; }
 
-.see-products a, .contact-us a, .wpcf7-form input[type="submit"] {
+.see-products a, .contact-us a, .wpcf7-form input[type="submit"], .comments-area input[type="submit"] {
   background-color: #400c0d;
   color: #FFF;
   padding: 0.5rem 1.5rem;
@@ -59,10 +59,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   border-radius: 3px;
   text-decoration: none;
   cursor: pointer; }
-  .see-products a:hover, .contact-us a:hover, .wpcf7-form input[type="submit"]:hover {
+  .see-products a:hover, .contact-us a:hover, .wpcf7-form input[type="submit"]:hover, .comments-area input[type="submit"]:hover {
     background-color: #551011;
     color: #FFF;
     text-decoration: underline; }
+  .see-products a:visited, .contact-us a:visited, .wpcf7-form input[type="submit"]:visited, .comments-area input[type="submit"]:visited {
+    color: #FFF; }
 
 .see-products, .contact-us {
   background-color: #FAFAFA;
@@ -476,6 +478,60 @@ table {
   .wpcf7-form input[type="submit"]:hover {
     text-decoration: none;
     box-shadow: none; }
+
+.comments-area h3 {
+  font-size: 1.5rem; }
+
+.comments-area label {
+  font-family: 'Open_Sans';
+  font-weight: bold;
+  color: #808080;
+  display: block;
+  margin-bottom: 0.25rem; }
+
+.comments-area .required {
+  color: #db272a; }
+
+.comments-area input, .comments-area textarea {
+  background-color: #FAFAFA;
+  resize: none; }
+
+.comments-area .comment-form-comment, .comments-area .comment-form-url {
+  clear: both; }
+  .comments-area .comment-form-comment label, .comments-area .comment-form-comment input, .comments-area .comment-form-url label, .comments-area .comment-form-url input {
+    width: 100%; }
+
+.comments-area .comment-form-author {
+  float: left;
+  width: 49%;
+  margin-top: 0;
+  margin-right: 1%; }
+  .comments-area .comment-form-author input {
+    width: 100%; }
+
+.comments-area .comment-form-email {
+  float: right;
+  width: 49%;
+  margin-top: 0;
+  margin-left: 1%; }
+  .comments-area .comment-form-email input {
+    width: 100%; }
+
+.comments-area input[type="submit"] {
+  font-size: 1rem;
+  font-weight: normal;
+  box-shadow: none;
+  padding: 0.75rem 1.5rem; }
+  .comments-area input[type="submit"]:hover {
+    text-decoration: none;
+    box-shadow: none; }
+
+.comments-area .logged-in-as a {
+  color: #db272a;
+  text-decoration: none; }
+  .comments-area .logged-in-as a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
 
 /* Buttons */
 button,
@@ -971,10 +1027,10 @@ object {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("../../images/hero-bread.jpg") center center no-repeat;
+  background: url("../../images/hero-bread.jpg") no-repeat center top #400c0d;
   background-size: cover;
   margin-bottom: 3rem;
-  height: 550px; }
+  height: 500px; }
 
 .banner-text {
   color: #FFF;
@@ -1006,7 +1062,7 @@ object {
     font-size: 1.5rem;
     color: #400c0d;
     text-transform: uppercase;
-    margin: 0; }
+    margin-bottom: 1rem; }
   .product-type-box a {
     color: #db272a;
     text-decoration: none; }
@@ -1088,8 +1144,14 @@ object {
 /*--------------------------------------------------------------
 # Product Page Styles
 --------------------------------------------------------------*/
+.archive .product-type-box img {
+  width: 60%;
+  margin-bottom: 0.75rem; }
+
 .archive .product-type-box h3 {
-  color: #400c0d; }
+  font-size: 1.25rem;
+  color: #400c0d;
+  margin: 0; }
 
 .archive .product-type-box a:hover {
   color: #400c0d;
@@ -1129,6 +1191,47 @@ object {
     background: #FFF;
     padding-left: 0.25rem; }
 
+/*    Product-Type Styles   */
+.tax-product-type .page-header {
+  text-align: left;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #d2d2d2;
+  margin-bottom: 1.5rem; }
+  .tax-product-type .page-header .taxonomy-description p {
+    margin-bottom: 0; }
+
+.product-menu .product-menu-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #d2d2d2;
+  margin-bottom: 1.5rem; }
+  .product-menu .product-menu-item img {
+    height: 150px;
+    width: 150px; }
+  .product-menu .product-menu-item .product-info {
+    padding: 0 2rem; }
+    .product-menu .product-menu-item .product-info h2 {
+      margin: 0; }
+
+/*    Single-Product Styles    */
+.single-product .entry-header {
+  color: #400c0d; }
+
+.single-product img {
+  margin-bottom: 0.5rem; }
+
+.single-product .price {
+  font-family: 'Overlock';
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #400c0d;
+  margin: 0; }
+
 /*--------------------------------------------------------------
 # Blog Page Styles
 --------------------------------------------------------------*/
@@ -1156,3 +1259,67 @@ object {
   .entry-content .read-more:hover {
     color: #400c0d;
     text-decoration: underline; }
+
+/*    Single Blog Styles    */
+.single-post .entry-title {
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 2.5rem; }
+
+.single-post .comments-link a {
+  color: #db272a;
+  text-decoration: none; }
+  .single-post .comments-link a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
+
+.single-post .post-quote {
+  background-color: #FAFAFA;
+  color: #808080;
+  font-size: 1.25rem;
+  padding-left: 1.5rem;
+  border-left: 7px solid #db272a;
+  margin: 0; }
+
+.single-post .cat-links {
+  margin-right: 1.5rem; }
+
+.single-post .cat-links a, .single-post .tags-links a {
+  color: #db272a;
+  text-decoration: none; }
+  .single-post .cat-links a:hover, .single-post .tags-links a:hover {
+    color: #400c0d;
+    text-decoration: underline; }
+
+/*    Comments Styles    */
+.comments-area .comments-title {
+  color: #a1a1a1; }
+
+.comments-area .comment-list {
+  padding: 0;
+  margin: 0; }
+
+.comments-area .comment-body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #d2d2d2; }
+  .comments-area .comment-body .comment-author-avatar {
+    display: inline-block;
+    margin-right: 1.5rem; }
+    .comments-area .comment-body .comment-author-avatar img {
+      border-radius: 50%; }
+  .comments-area .comment-body .comment-content {
+    display: inline-block; }
+    .comments-area .comment-body .comment-content .fn {
+      font-weight: bold; }
+    .comments-area .comment-body .comment-content a {
+      color: #db272a;
+      text-decoration: none; }
+      .comments-area .comment-body .comment-content a:hover {
+        color: #400c0d;
+        text-decoration: underline; }

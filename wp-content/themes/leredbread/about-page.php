@@ -11,7 +11,7 @@ get_header();?>
 				<!-- Page Header -->
 				<div class="page-header">
 					<h1>Learn About Our Team And Culture</h1>
-					<p><?php echo CFS()->get('tagline'); ?></p> 
+					<p><?php echo CFS()->get('tagline'); ?></p>
 				</div> <!-- .page-header -->
 				<!-- About Boxes -->
 				<div class="about-blocks">

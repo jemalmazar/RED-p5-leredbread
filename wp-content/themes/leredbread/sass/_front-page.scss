@@ -12,10 +12,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../../images/hero-bread.jpg') center center no-repeat;
+  background: url('../../images/hero-bread.jpg') no-repeat center top $secondary-brand-color;
   background-size: cover;
   margin-bottom: 3rem;
-  height: 550px;
+  height: 500px;
 }
 
 .banner-text {
@@ -53,7 +53,7 @@
     font-size: 1.5rem;
     color: $secondary-brand-color;
     text-transform: uppercase;
-    margin: 0;
+    margin-bottom: 1rem;
   }
 
   a {

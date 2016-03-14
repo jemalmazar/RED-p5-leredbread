@@ -18,7 +18,6 @@ get_header(); ?>
 							the_archive_title( '<h1 class="page-title">', '</h1>' );
 							the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
-						<p><?php echo CFS()->get('tagline'); ?></p>
 
 						<?php
 							$terms = get_terms( 'product-type' );
