@@ -7,7 +7,7 @@ Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:
+Tags: Le Red Bread, RED Academy
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -26,6 +26,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Embedded Fonts
 # Typography
 # Elements
+# Global
 # Forms
 # Navigation
 	## Links
@@ -56,6 +57,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "fonts";
 @import "typography";
 @import "elements";
+@import "global";
 @import "forms";
 @import "navigation";
 @import "modules";

@@ -1,5 +1,5 @@
 /*!
-Theme Name: LeRedBread
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -7,6 +7,7 @@ Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Le Red Bread, RED Academy
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -24,6 +25,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Embedded Fonts
 # Typography
 # Elements
+# Global
 # Forms
 # Navigation
 	## Links
@@ -42,7 +44,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -396,6 +397,50 @@ img {
 table {
   margin: 0 0 1.5em;
   width: 100%; }
+
+/*--------------------------------------------------------------
+# Global
+--------------------------------------------------------------*/
+.page-header h1, .page-template-default .entry-header h1, .single-product .entry-header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0; }
+
+.page-header p, .page-template-default .entry-header p, .single-product .entry-header p {
+  margin-bottom: 3rem; }
+
+.see-products a, .contact-us a, .wpcf7-form input[type="submit"], .comments-area input[type="submit"], .page-content .search-form .icon-search {
+  background-color: #400c0d;
+  color: #FFF;
+  padding: 0.5rem 1.5rem;
+  border: 0;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer; }
+  .see-products a:hover, .contact-us a:hover, .wpcf7-form input[type="submit"]:hover, .comments-area input[type="submit"]:hover, .page-content .search-form .icon-search:hover {
+    background-color: #551011;
+    color: #FFF;
+    text-decoration: underline; }
+  .see-products a:visited, .contact-us a:visited, .wpcf7-form input[type="submit"]:visited, .comments-area input[type="submit"]:visited, .page-content .search-form .icon-search:visited {
+    color: #FFF; }
+
+.see-products, .contact-us {
+  background-color: #FAFAFA;
+  border: 1px solid #e1e1e1;
+  padding: 1.5rem;
+  margin: 0 auto 3rem;
+  width: 1024px; }
+  .see-products p, .contact-us p {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin: 0; }
 
 /*--------------------------------------------------------------
 # Forms
