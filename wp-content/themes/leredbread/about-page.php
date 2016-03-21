@@ -14,18 +14,18 @@ get_header();?>
 					<p><?php echo CFS()->get('tagline'); ?></p>
 				</div> <!-- .page-header -->
 
-				<hr class="decoration"></hr>
+				<hr class="decoration">
 
 				<!-- About Boxes -->
 				<div class="about-blocks">
 					<div class="about-block-item">
-						<img src="<?php bloginfo( 'template_directory' ); ?>/images/team.jpg" alt="The Le Red Bread team" />
+						<img src="<?php echo get_template_directory_uri(); ?>/images/team.jpg" alt="The Le Red Bread team" />
 						<h2>Le Red Bread Team</h2>
 						<?php echo CFS()->get('team_copy'); ?>
 					</div> <!-- .about-box-one -->
 
 					<div class="about-block-item">
-						<img src="<?php bloginfo( 'template_url' ); ?>/images/bakery.jpg" alt="The Le Red Bread team" />
+						<img src="<?php echo get_template_directory_uri(); ?>/images/bakery.jpg" alt="The Le Red Bread bakery" />
 						<h2>Le Red Bread Bakery</h2>
 						<?php echo CFS()->get('bakery_copy') ?>
 					</div> <!-- .about-box-two -->

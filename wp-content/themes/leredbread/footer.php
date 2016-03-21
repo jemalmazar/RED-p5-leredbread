@@ -30,7 +30,7 @@
 					</div>
 
 					<div class="footer-logo">
-						<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo-white.svg" alt="Le Red Bread alternate logo" />
+						<img src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo-white.svg" alt="Le Red Bread alternate logo" />
 					</div>
 
 					<div class="footer-hours">

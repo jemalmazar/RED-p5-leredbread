@@ -29,7 +29,7 @@
 
 // Product Category Styles
 
-.product-categories {
+.home .product-type-block {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
@@ -45,8 +45,7 @@
   }
 }
 
-.product-type-box {
-  display: inline-block;
+.home .product-type-box {
   width: 23%;
 
   h3 {
@@ -63,7 +62,7 @@
 
   img {
     margin-bottom: 1.5rem;
-    width: 80%;
+    // width: 80%;
   }
 }
 

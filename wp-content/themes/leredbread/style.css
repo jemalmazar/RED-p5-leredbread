@@ -1,5 +1,5 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: LeRedBread
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -7,7 +7,6 @@ Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -43,46 +42,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-.page-header h1, .page-template-default .entry-header h1, .single-product .entry-header h1 {
-  font-size: 2rem;
-  text-transform: uppercase;
-  margin: 0; }
-
-.page-header p, .page-template-default .entry-header p, .single-product .entry-header p {
-  margin-bottom: 3rem; }
-
-.see-products a, .contact-us a, .wpcf7-form input[type="submit"], .comments-area input[type="submit"], .page-content .search-form .icon-search {
-  background-color: #400c0d;
-  color: #FFF;
-  padding: 0.5rem 1.5rem;
-  border: 0;
-  border-radius: 3px;
-  text-decoration: none;
-  cursor: pointer; }
-  .see-products a:hover, .contact-us a:hover, .wpcf7-form input[type="submit"]:hover, .comments-area input[type="submit"]:hover, .page-content .search-form .icon-search:hover {
-    background-color: #551011;
-    color: #FFF;
-    text-decoration: underline; }
-  .see-products a:visited, .contact-us a:visited, .wpcf7-form input[type="submit"]:visited, .comments-area input[type="submit"]:visited, .page-content .search-form .icon-search:visited {
-    color: #FFF; }
-
-.see-products, .contact-us {
-  background-color: #FAFAFA;
-  border: 1px solid #e1e1e1;
-  padding: 1.5rem;
-  margin: 0 auto 3rem;
-  width: 1024px; }
-  .see-products p, .contact-us p {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    margin: 0; }
 
 html {
   font-family: sans-serif;
@@ -441,7 +400,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-.wpcf7-form input[type="text"], .wpcf7-form textarea {
+.wpcf7-form input[type="text"], .wpcf7-form input[type="email"], .wpcf7-form textarea {
   background-color: #FAFAFA;
   width: 100%;
   resize: none; }
@@ -1067,7 +1026,6 @@ object {
   margin-left: 0; }
 
 .error404 a {
-  color: #db272a;
   text-decoration: none; }
   .error404 a:hover {
     color: #400c0d;
@@ -1109,7 +1067,7 @@ object {
   text-transform: uppercase;
   text-shadow: 3px 3px 1px rgba(100, 100, 100, 0.5); }
 
-.product-categories {
+.home .product-type-block {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1117,27 +1075,25 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 3rem; }
-  .product-categories h3 {
+  .home .product-type-block h3 {
     text-align: center; }
-  .product-categories img {
+  .home .product-type-block img {
     display: block;
     width: 80%;
     margin: 0 auto; }
 
-.product-type-box {
-  display: inline-block;
+.home .product-type-box {
   width: 23%; }
-  .product-type-box h3 {
+  .home .product-type-box h3 {
     font-size: 1.5rem;
     color: #400c0d;
     text-transform: uppercase;
     margin-bottom: 1rem; }
-  .product-type-box a {
+  .home .product-type-box a {
     color: #db272a;
     text-decoration: none; }
-  .product-type-box img {
-    margin-bottom: 1.5rem;
-    width: 80%; }
+  .home .product-type-box img {
+    margin-bottom: 1.5rem; }
 
 .latest-news {
   background-color: #FAFAFA;
@@ -1293,17 +1249,26 @@ hr.decoration {
 # Product Page Styles
 --------------------------------------------------------------*/
 .archive .product-type-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 3rem; }
 
 .archive .product-type-box {
-  width: 18%; }
+  width: 20%; }
   .archive .product-type-box img {
     width: 60%;
     margin-bottom: 0.75rem; }
   .archive .product-type-box h3 {
+    margin: 0; }
+  .archive .product-type-box a {
     font-size: 1.25rem;
     color: #400c0d;
-    margin: 0; }
+    text-transform: uppercase;
+    text-decoration: none; }
   .archive .product-type-box a:hover {
     color: #400c0d;
     text-decoration: underline; }
@@ -1386,6 +1351,9 @@ hr.decoration {
 /*--------------------------------------------------------------
 # Blog Page Styles
 --------------------------------------------------------------*/
+.blog .hentry {
+  margin-bottom: 4.5rem; }
+
 .entry-header img {
   margin-bottom: .5rem; }
 

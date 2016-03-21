@@ -12,8 +12,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<!-- Font Awesome CDN link -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<?php wp_head(); ?>
 	</head>
@@ -26,7 +24,9 @@
 				<div class="site-branding">
 					<div class="site-branding-inner container">
 						<div class="logo">
-							<img src="<?php bloginfo('template_directory'); ?>/images/lrb-logo.svg" alt="Le Red Bread logo" />
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/lrb-logo.svg" alt="Le Red Bread logo" />
+							</a>
 						</div>
 						<div class="header-social-icons">
 							<ul>
