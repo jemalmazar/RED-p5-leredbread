@@ -9,13 +9,15 @@
 - HTML/CSS
 - PHP
 - Flexbox
-- Sass
-- Gulp
+- Gulp (Sass, Browser-Sync, Auto-Prefixer)
 - WordPress
+- [REDstarter](https://github.com/redacademy/redstarter) theme
+- Custom built functionality plugin and widget
+- WordPress plugins ([Custom Field Suite](https://en-ca.wordpress.org/plugins/custom-field-suite/), [Contact Form 7](https://en-ca.wordpress.org/plugins/contact-form-7/))
 
 **Little Things I Learned**
 
-- use case for _<hr>_ tags for decorative purposes
+- use case for _hr_ tags for decorative purposes
 - further use cases of the _:before_ pseudo-element for decorative purpose on the products page
 - how to embed an map/location using Google Maps
 
